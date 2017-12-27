@@ -13,22 +13,20 @@ mixin doctors(img, name, about, about_more, certs, fancy)
 		#doctors_container
 			.row
 				.col-md-3
-					+doctors('img/ephimov_el.jpg', 'Ефимов Александр Владимирович', 'Главный врач клиники, врач высшей категории')
+					+doctors('img/ephimov_el.jpg', 'Ефимов Александр Владимирович', 'Главный врач клиники, врач высшей категории','#ephimovEl', 'img/d_c/eph_el_1.jpg', 'eph_el')
 				.col-md-3
-					+doctors('img/ephimov_jr.jpg', 'Ефимов Владислав Александрович', 'врач невролог, мануальный терапевт, подиатр, остеопат', '#ephimovJr', 'img/d_c/diplom_1.jpg', 'eph_jr')
-					a.doctors_certs.hidden(href="img/d_c/diplom_2.jpg", data-fancybox="eph_jr")
-					a.doctors_certs.hidden(href="img/d_c/diplom_3.jpg", data-fancybox="eph_jr")
+					+doctors('img/ephimov_jr.jpg', 'Ефимов Владислав Александрович', 'врач невролог, мануальный терапевт, подиатр, остеопат', '#ephimovJr', 'img/d_c/eph_jr_1.jpg', 'eph_jr')
 				.col-md-3
-					+doctors('img/morozov.jpg', 'Морозов Юрий Николаевич', 'Врач травматолог, мануальный терапевт, педиатр')
+					+doctors('img/morozov.jpg', 'Морозов Юрий Николаевич', 'Врач травматолог, мануальный терапевт, педиатр','#morozov', 'img/d_c/morozov_1.jpg', 'morozov')
 				.col-md-3
-					+doctors('img/postnova.jpg', 'Постнова Анжела Олеговна', 'Врач невролог')
+					+doctors('img/postnova.jpg', 'Постнова Анжела Олеговна', 'Врач невролог', '#postnova', 'img/d_c/postnova_1.jpg', 'postnova')
 			.row
 				.col-md-3
-					+doctors('img/kolpakova.jpg', 'Колпакова Ирина Александровна', 'врач-невролог, рефлексотерапевт')
+					+doctors('img/kolpakova.jpg', 'Колпакова Ирина Александровна', 'врач-невролог, рефлексотерапевт','#kolpakova', 'img/d_c/kolpakova_1.jpg', 'kolpakova')
 				.col-md-3
 					+doctors('img/naumkin.jpg', 'Наумкин Андрей Николаевич', 'фельдшер, массажист', '#naumkin')
 				.col-md-3
-					+doctors('img/borisov.jpg', 'Борисов Сергей Петрович', 'Массажист')
+					+doctors('img/borisov.jpg', 'Борисов Сергей Петрович', 'Массажист', '#borisov', 'img/d_c/borisov_1.jpg', 'borisov')
 		#licenses
 			.row
 				.col-md-6
