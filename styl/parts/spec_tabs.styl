@@ -1,0 +1,79 @@
+#specialization
+	h3 +p
+		margin-top: 35px
+		text-align: center
+#spec_tabs
+	margin: 80px auto 0
+	width: 945px
+.tab_links
+	li
+		list-style: none
+		display: inline-block
+		padding: 10px 22px
+		text-align: center;
+		margin-bottom: 40px
+		position relative
+		a
+			font-size: 24px
+			font-family: "OpenSansBold",sans-serif;
+			color: h3_color
+			width: 100%
+			height: auto
+			transition: all .4s ease			
+.ui-state-default.ui-tab.ui-tabs-active.ui-state-active,
+.ui-state-default.ui-tab.ui-tabs-active.ui-state-focus
+	a
+		color: green
+		transition: all .4s ease
+	&:before
+		content: ''
+		width: 100px
+		height 3px
+		background-color: green 
+		position relative
+		bottom: -42px
+		margin: 0 auto
+		transition: all .4s ease
+		display block
+	&:after
+		content: ''
+		width: 10px
+		height 10px
+		background-image: linear-gradient(45deg, green 50%, transparent 50%)
+		position absolute
+		bottom: 0
+		left: calc(50% - 5px)
+		transform: rotate(-45deg)
+		transition: all .4s ease		
+.ui-state-default.ui-tab.ui-state-hover
+	a
+		color green
+		transition: all .4s ease
+		transition: all .4s ease
+#tabs
+	div
+		background-color: grey 
+		border-radius: 5px
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+		overflow: hidden
+	+ p
+		text-align: center
+		font-size: 22px
+		padding-top: 35px
+		color: h3_color
+.tab_img
+	float left
+	height: 363px
+	width: 50%
+.tab_ul
+	padding: 36px 0 0 80px
+	float left
+	width: 43%
+	li
+		color: green
+		font-size: 20px;
+		font-family: "OpenSansSemibold", sans-serif;
+		margin-bottom: 10px;
+		line-height: 1.2;
+		span
+			color: #363837;

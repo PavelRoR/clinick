@@ -1,0 +1,23 @@
+#breadcrumbs
+    padding: 25px 0 90px
+    ul
+        li
+            float left
+            list-style: none
+            &:after
+                content: '→'
+                margin-right: 15px
+            &:last-child
+                a
+                    pointer-events: none
+                    color: rgba(#070808, 0.8);
+                &:after
+                    content: none
+
+            a
+                font-size: 14px;
+                font-family: "Open Sans";
+                color: rgba(#070808, 0.5);
+                line-height: 2;
+                text-align: left;
+                margin-right: 15px

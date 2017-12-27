@@ -1,0 +1,25 @@
+section#location
+    .col-sm-6
+        #map
+            script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A553c449f18c6593cb6975c3501e3d47b1b88fe6ad61eefc6d3642e91592d692d&amp;width=100%25&amp;height=658&amp;lang=ru_RU&amp;scroll=true")
+    .col-sm-6
+        form.contact_form(action="thanks.html", method="GET"  target="_blank")#form_1
+            h4 Запись на прием
+            input#name(type="text" name="name" placeholder="Введите Ваше имя" required)
+            input#phone(type="tel" name="phone" placeholder="Контактный номер телефона" required )
+            div.calendar
+                img(src="img/calendar.jpg", alt="Календарь")
+            .month.select
+                select(name="month")
+                    each val in ['Месяц','Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь']
+                        option(value=val)= val
+                a.select_button
+            .day.select
+                select(name="day")
+                    - var n = 1;
+                    while n < 32
+                        //- option(value="День") День
+                        option(value=n)= n++
+                a.select_button
+            textarea(name="textarea",  placeholder="Комментарий")
+            button.button(type="submit") Записаться

@@ -1,0 +1,40 @@
+#welcome
+    .row
+        .col-md-6
+            h3 Добро пожаловать в Клинику доктора Ефимова
+            a.home_link(href="http://doctorefimov.com" target="_blank") http://doctorefimov.com
+            h4.why_title Почему выбирают именно нас :
+            .row.one
+                .col-md-6
+                    +why('first_icon','Уникальная  методика')
+                .col-md-6
+                    +why('second_icon',  'Современный подход')
+            .row.two
+                .col-md-6
+                    +why('third_icon','Профессионализм')
+                .col-md-6
+                    +why('fourth_icon', 'Идеальная репутация')
+        .col-md-6
+            #welcome_slider
+                .big
+                    img(src="img/photo_1.jpg", alt="Фото клиники 1")
+                .small
+                    .row
+                        .col-md-3
+                            a(href="img/photo_1.jpg")
+                                img(src="img/photo_1_min.jpg", alt="Фото клиники 1")
+                        .col-md-3
+                            a(href="img/photo_2.jpg")
+                                img(src="img/photo_2_min.jpg", alt="Фото клиники 2")
+                        .col-md-3
+                            a(href="img/photo_3.jpg")
+                                img(src="img/photo_3_min.jpg", alt="Фото клиники 3")
+                        .col-md-3
+                            a(href="img/photo_4.jpg")
+                                img(src="img/photo_4_min.jpg", alt="Фото клиники 4")
+            .adress
+                h5 Мы находимся по адресу:
+                p г.Тюмень, ул. Луначарского 18; 
+                    br 
+                    | ул. Холодильная 15 офис 3
+                button.button(data-toggle="modal" data-target="#myModalForm") Записаться на прием

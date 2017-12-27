@@ -1,0 +1,99 @@
+#aside
+    width: 265px
+    float: left
+    ul
+        list-style: none
+        li
+            min-height: 40px
+            &:hover
+            &.active    
+                background-color: rgba(0, 0, 0, .08);
+                a
+                    color green
+            a
+                display block
+                font-size: 16px;
+                font-family: "Open Sans";
+                color: rgba(54, 56, 55, 0.8)
+                text-align: left;
+                width: 100%
+                height: inherit
+                padding: 15px 25px
+                line-height: 1.2
+                // pointer-events: none
+.contact_form
+    border: 3px solid green
+    padding: 20px
+    margin: 30px auto
+    width: 265px;
+    h4
+        font-size: 16px;
+        font-family: "OpenSansBold",sans-serif;
+        color: green
+        text-transform: uppercase;
+        line-height: 1.389;
+        text-align: left;
+        margin-bottom: 13px
+        &:before
+            content: url(../img/rec.jpg)
+            margin-right: 8px
+            vertical-align: middle
+            height: inherit
+    .calendar
+        float: left
+        margin-right: 16px
+    .select
+        border: 1px solid #b3b3b3
+        border-radius: 19px;
+        margin-bottom: 16px
+        color: grey
+        font-size: 14px;
+        font-family: "OpenSansLight", sans-serif;
+        color: #969a98
+        height: 40px
+        line-height: 40px
+        position relative
+        overflow hidden
+        &:after
+            content: url('../img/select.png')
+            background-color: #fff 
+            height: 46px;		
+            width: 22px;
+            position: absolute	
+            right: 0px;
+            top: -3px;
+            bottom: 0;
+            z-index: 150;	
+    .select.month
+        clear both
+        width: 100%
+    .select.day
+        float: right 
+        width: 155px
+    input
+    textarea
+        border: 1px solid #b3b3b3
+        border-radius: 19px;
+        padding: 0 20px
+        margin-bottom: 16px
+        color: grey
+        font-size: 14px;
+        font-family: "OpenSansLight", sans-serif;
+        color: #969a98
+        height: 40px
+        line-height: 40px
+    select
+        position: relative;		
+        background: none;	
+        z-index: 100;
+        border: 2px solid #fff
+        padding: 0 0 0 20px
+        width: inherit 
+    input
+    textarea
+        width: 100%
+    textarea
+        min-height: 100px
+        clear: both
+        line-height: 16px
+        padding: 7px 20px

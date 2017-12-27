@@ -1,0 +1,57 @@
+footer#footer
+	.container
+		.row
+			.col-md-4
+				h5 Клиника доктора Ефимова
+				br
+				p "ООО Западно-сибирский центр мануальной терапии"
+				h5 Режим работы: 
+				p Будни 9:00 - 20:00; Сб 9:00 - 14:00; Вс - выходной
+			.col-md-4
+				h5 адрес:
+				br
+				p г.Тюмень, ул. Холодильная 15 оф.3
+					br 
+					| тел.: 8 (3452) 63-50-80
+					br
+					| г.Тюмень, ул. Луначарского 18,
+					br
+					| тел.: 8 (3452) 62-71-17
+			.col-md-4
+				h5 мы в социальных сетях:
+				br
+				.soc_buttons
+					a(href="http://vk.com/klinikaefimova" target="_blank")
+						i.fa.fa-vk(aria-hidden="true")
+					a(href="https://instagram.com/KLINIKA_DOCTORA_EFIMOVA/" target="_blank")
+						i.fa.fa-instagram(aria-hidden="true")
+					a(href="https://www.facebook.com/groups/KlInIkAEfImOvA/" target="_blank")
+						i.fa.fa-facebook(aria-hidden="true")
+.modal.fade(tabindex="-1" role="dialog")#myModalForm
+	.modal-dialog(role="document")
+		.modal-content
+			button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+				span(aria-hidden="true") &times;
+			.modal-body
+				form.contact_form(action="thanks.html", method="GET" target="_blank")#form_2
+					h4 Запись на прием
+					input#name(type="text" name="name" placeholder="Введите Ваше имя" required)
+					input#phone(type="tel" name="phone" placeholder="Контактный номер телефона" required)
+					div.calendar
+						img(src="img/calendar.jpg", alt="Календарь")
+					.month.select
+						select(name="month")
+							each val in ['Месяц','Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь']
+								option(value=val)= val
+						a.select_button
+					.day.select
+						select(name="day")
+							- var n = 1;
+							while n < 32
+								//- option(value="День") День
+								option(value=n)= n++
+						a.select_button
+					textarea(name="textarea",  placeholder="Комментарий")
+					button.button(type="submit") Записаться
+a.up(href="#first_screen")
+	i.fa.fa-arrow-circle-up(aria-hidden="true")

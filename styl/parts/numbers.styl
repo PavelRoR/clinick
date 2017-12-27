@@ -1,0 +1,44 @@
+#numbers
+    background-color: green
+    color: #ffffff
+    padding: 70px 0
+.numbers
+    display: table
+
+.number_icon
+    height: 68px
+    width: 68px
+    background-image: url(../img/sprite_3.png)
+    background-repeat no-repeat
+    background-position 0 0
+    display: table-cell
+    vertical-align: middle
+.number_icon.second
+    background-position-x: -68px
+.number_icon.third
+    background-position-x -136px
+.number_icon.fourth
+    background-position-x -204px
+.number_caption
+    display: table-cell
+    vertical-align: middle
+    padding-left: 29px
+    h5 
+        font-family: "OpenSansBold", sans-serif
+        font-size: 30px
+        text-align: left
+        line-height: 40px
+        &:after
+            content: ''
+            display block
+            width: 68px
+            height: 1px
+            border-top: 1px dashed #fff
+            margin: 3px 0 9px
+    p
+        font-family: "OpenSansSemibold"
+        font-size: 12px
+        color: #fff
+        text-align: left
+        text-transform: uppercase
+        letter-spacing: -.5px

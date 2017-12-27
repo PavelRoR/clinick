@@ -1,0 +1,44 @@
+aside#aside
+    ul
+        li
+            a(href="/") На главную
+        li
+            a(href="category.html") Мануальная терапия
+        li
+            a(href="category.html") Лечебный массаж
+        li
+            a(href="category.html") Остеопатическое лечение
+        li
+            a(href="category.html") Кинезиотейпирование
+        li
+            a(href="category.html") Иглорефлексотерапия
+        li
+            a(href="category.html") Внутритканевая электростимуляция
+        li
+            a(href="category.html") Гирудотерапия
+        li
+            a(href="category.html") Лечение триггерных точек
+        li
+            a(href="category.html") Медикаментозные блокады
+        li
+            a(href="category.html") Общие статьи
+    form.contact_form(action="thanks.html", method="GET"  target="_blank")#form_3
+            h4 Запись на прием
+            input#name(type="text" name="name" placeholder="Введите Ваше имя" required)
+            input#phone(type="tel" name="phone" placeholder="Контактный номер телефона" required )
+            div.calendar
+                img(src="img/calendar.jpg", alt="Календарь")
+            .day.select
+                select(name="day")
+                    - var n = 1;
+                    while n < 32
+                        //- option(value="День") День
+                        option(value=n)= n++
+                a.select_button
+            .month.select
+                select(name="month")
+                    each val in ['Месяц','Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь']
+                        option(value=val)= val
+                a.select_button
+            textarea(name="textarea",  placeholder="Комментарий")
+            button.button(type="submit") Записаться

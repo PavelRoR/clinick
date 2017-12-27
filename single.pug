@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="author" content="")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(name="robots" content="index, follow")
+		meta(name="revisit-after" content="7 days")
+		link(rel="icon" type="image/x-icon" href="favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
+		title Статья | Клиника доктора Ефимова
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet" href="css/blog.css")
+	body
+		include pug/blog/blog_header
+		.container
+			include pug/blog/blog_breadcrumbs
+			include pug/blog/blog_aside
+			include pug/blog/blog_main_single
+		include pug/blog/blog_footer
+		include pug/blog/blog_scripts

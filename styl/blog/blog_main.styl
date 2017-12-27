@@ -1,0 +1,151 @@
+main
+	width: 790px
+	float: right
+	h1
+		font-size: 22px;
+		font-family: "OpenSansBold", sans-serif;
+		color: h3_color
+		line-height: 1.2;
+		margin-bottom: 60px
+article
+	margin-bottom: 20px
+	overflow: hidden
+	
+	h3
+		font-size: 18px;
+		font-family: "OpenSansBold", sans-serif;
+		color: h3_color
+		line-height: 1.2;
+		margin-bottom: 20px
+	h4
+		font-size: 16px;
+		font-family: "OpenSansBold", sans-serif;
+		color: h3_color
+		font-weight: bold;
+		line-height: 1.2;
+		margin-bottom: 10px
+	p
+		margin-bottom: 20px
+		text-align: justify
+	img
+		display block
+		margin: 20px auto
+		max-width 100%
+		height: auto
+		border-radius: 5px
+	.article_img
+		max-width: 300px
+		height auto
+		&.left
+			float left
+			margin: 0 10px 10px 0
+		&.right
+			float: right
+			margin: 0 10px 0 10px
+	ul
+		margin: 0 0 20px 40px 
+		li
+			font-family: "OpenSans", sans-serif;
+			font-size: 16px
+			color: p_black
+			margin-bottom: 5px
+.full
+	border: 0
+	background-color: green 
+	color: #ffffff
+	font-family: "RobotoMedium", arial
+	font-size: 18px
+	text-align: center
+	width: 300px
+	padding: 10px
+	line-height: 20px
+	float: right
+	border-radius: 20px
+	margin-bottom: 40px
+	&:hover
+		background-color: #2e2f2f
+.article_list
+	padding-top: 80px
+	border-top: 1px solid grey 
+.exerpt_wrapper
+	overflow hidden
+	margin-bottom: 40px
+	padding: 5px
+.exerpt_img
+	float left
+	margin-right: 60px
+	border-radius: 5px
+.exerpt_title
+	font-size: 18px;
+	font-family: "OpenSansBold", sans-serif;
+	color: rgb(54, 56, 55);
+	line-height: 24px
+	margin-bottom: 20px
+.exerpt_p
+	line-height: 1.5;
+	margin-bottom: 20px
+.read_more
+	display inline-block
+	font-size: 16px;
+	font-family: 'OpenSansItalic', sans-serif;
+	color: h3_color
+	font-style: italic;
+	line-height: 1.5;
+	float: right
+	border-bottom: 1px dashed
+	// pointer-events: none
+	&:hover
+		color: green
+.pagination
+	width: 270px
+	margin: 70px auto
+	ul
+		display: table
+		li
+			display: table-cell
+			vertical-align: middle
+			padding: 0 5px
+			&:hover
+				a
+					color: #fff
+					background-color: green
+			a
+				display block
+				width: 35px
+				font-size: 16px;
+				font-family: "Open Sans", sans-serif;
+				color: #2f2e2e
+				text-align: center
+				line-height: 35px
+				border-radius: 100%
+				pointer-events: none
+				&.active
+					color: #fff
+					background-color: green
+				&.no_hover
+					background-color: #ffffff
+					color: #2f2e2e
+					pointer-events: none
+#single_nav
+	overflow hidden
+	margin-bottom: 100px
+	a
+		font-size: 16px
+		text-transform: none
+		background-image: linear-gradient( 90deg, grey 0%, grey 100%); 
+		border: 1px solid grey
+		border-radius: 19px
+		color #2f2e2e
+		font-family: "OpenSans", arial;
+		color: rgb(47, 46, 46);
+		width: 260px
+		float left
+		 padding: 12px 25px
+		 text-align: center
+		// pointer-events: none
+		&:hover
+			border: 1px solid #198050
+			background-image: linear-gradient( 90deg, #29a46b 0%, #1d8f5a 100%); 
+			color: #fff
+		&:last-child
+			float:  right

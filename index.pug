@@ -1,0 +1,68 @@
+mixin ul_list(ul_class, ...items)
+	ul(class=ul_class)
+		each item in items
+			li
+				span= item
+
+mixin why(class_n, title)
+	.why_tile
+		.why_icon(class= class_n)
+		p= title
+
+mixin numbers(class_n, number, title)
+	.number
+		.number_icon(class= class_n)
+		.number_caption
+			h5= number
+			p= title
+mixin heal_it(class_p, title)
+	.problem
+		.icon_wrapper
+			.inner_icon(class= class_p)
+		p= title
+
+mixin doctors(img, name, about)
+	.doctor
+		img(src= img, alt= name)
+		h5= name
+		p= about
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="author" content="")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(name="robots" content="index, follow")
+		meta(name="revisit-after" content="7 days")
+		meta(property="og:image" content="")
+		link(rel="icon" type="image/x-icon" href="favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
+		title Клиника доктора Ефимова
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet" href="css/styles.css")
+	body
+		include pug/main
+		section#specialization
+			.container
+				h3 Наша специализация
+				p В нашей клинике работают специалисты, обладающие множеством методик, полученных от 
+					br 
+					| самых известных в мире российских и зарубежных преподавателей
+				include pug/spec_tabs
+				include pug/kinds
+				include pug/welcome
+		include pug/numbers
+		include pug/we_heal		
+		include pug/about_vk
+		include pug/doctors
+		include pug/about_clinic
+		include pug/testimonials
+		include pug/photo_gallery
+		include pug/logos
+		include pug/location
+		include pug/footer
+		include pug/scripts
