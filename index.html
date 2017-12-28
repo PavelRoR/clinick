@@ -19,7 +19,7 @@
   <body>
     <div id="first_screen">
       <header id="header">
-        <div class="container"><a href="/"><img src="img/logo.png" alt="Логотип"/></a>
+        <div class="container"><a href="/" id="logo"><img src="img/logo.png" alt="Логотип"/></a>
           <div class="contact_info">
             <div class="schedule"><i class="fa fa-clock-o" aria-hidden="true"></i>
               <div class="content">
@@ -220,8 +220,10 @@
               </div>
               <div class="adress">
                 <h5>Мы находимся по адресу:</h5>
-                <p>г.Тюмень, ул. Луначарского 18; <br/>ул. Холодильная 15 офис 3</p><a class="button button_price" href="/ephimov_price.pdf" target="_blank">Стоимость услуг</a>
-                <button class="button" data-toggle="modal" data-target="#myModalForm">Записаться на прием</button>
+                <p>г.Тюмень, ул. Луначарского 18; <br/>ул. Холодильная 15 офис 3</p>
+                <div class="adress_buttons"><a class="button button_price" href="/ephimov_price.pdf" target="_blank">Стоимость услуг</a>
+                  <button class="button button_modal" data-toggle="modal" data-target="#myModalForm">Записаться на прием</button>
+                </div>
               </div>
             </div>
           </div>
@@ -314,7 +316,7 @@
               <div class="icon_wrapper">
                 <div class="inner_icon fifth"></div>
               </div>
-              <p>Энурез ,заболевания кожи, глаз</p>
+              <p>Энурез, заболевания кожи, глаз</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -442,7 +444,7 @@
                     <h5>Наумкин Андрей Николаевич</h5>
                     <p>фельдшер, массажист</p>
                     <div class="more_buttons">
-                      <button class="more_about" data-toggle="modal" data-target="#naumkin">Подробнее о враче</button>
+                      <button class="more_about" data-toggle="modal" data-target="#naumkin">Подробнее о враче</button><a class="doctors_certs">Лицензии врача</a>
                     </div>
                   </div>
             </div>
