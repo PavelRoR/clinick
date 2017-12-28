@@ -40,12 +40,12 @@ mixin doctors(img, name, about, about_more, certs, fancy)
 							br 
 							| ул. Холодильная 15 офис 3
 						button.button(data-toggle="modal" data-target="#myModalForm") Записаться на прием
-				.col-md-6
+				.col-md-6#certs
 					.row
-						.col-md-6
+						.col-md-6.main
 							a(href="img/license_1_big.jpg" data-fancybox="images")
 								img(src="img/license_1.jpg", alt="Лицензия 1")
-						.col-md-6
+						.col-md-6.sub
 							.row.mb
 								.col-md-6
 									a(href="img/license_2_big.jpg" data-fancybox="images")
