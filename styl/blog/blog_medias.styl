@@ -1,10 +1,14 @@
+@media screen and (max-width: 1366px)
+	.up
+		right: 10px
 @media screen and (max-width: 1199px)
 	#logo
 		img
 			width 20%
 	.up
 		right: 10px
-
+	main
+		width: 70%
 @media screen and (max-width: 991px)
 	.contact_info
 		padding-top: 5px
@@ -25,6 +29,15 @@
 	.soc_groups .fa
 		font-size: 20px
 		width: 36px;
+	main
+		width: 100%
+		float: none
+
+	#aside
+		float: none
+		display: none
+	.exerpt_img
+		margin-right: 20px;
 	#footer
 		br
 			display: none
@@ -69,6 +82,10 @@
 		padding-bottom: 2px;
 	.content span
 		line-height: 1
+	.exerpt_img
+		margin-right: 20px;
+		width: 170px;
+		height: auto;
 
 
 @media screen and (max-width: 560px)
@@ -105,7 +122,12 @@
 		span
 			float: none;
 			display: inline;
-
+	#single_nav a
+		float: none
+		display: block
+		margin: 10px auto
+	#single_nav a:last-child
+		float: none
 @media screen and (max-width: 490px)
 	#header .container
 		max-height: none
@@ -115,7 +137,11 @@
 			width 100%
 	.phones .fa, .schedule .fa, .soc_groups .fa
 		display: none
-
+	#breadcrumbs
+		padding-bottom: 25px;
+	main
+		h1
+			margin-bottom: 25px;
 @media screen and (max-width: 425px)
 	#logo
 		width: 120px;
@@ -142,5 +168,17 @@
 		display: none
 	.contact_info
 		width 100%
+	article .article_img
+		max-width: 100%
+	article .article_img.right
+		float: none
+		margin 10px 0
+		clear both
+	.exerpt_img
+		width: 100px;
+	#single_nav a
+		font-size: 14px;
+		width: 210px;
+		height: 45px;
 	.soc_buttons a:nth-child(2)
 		margin: 0 15px;
