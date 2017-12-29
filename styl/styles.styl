@@ -201,9 +201,17 @@ a
 	background-position: center top
 	background-repeat: no-repeat
 	background-size cover
+select
+	&:focus
+	&:active
+		outline: 0;
+		border: 0
+
+
 #thanks
 	#first_screen
 		height: calc(100vh - 215px)
+
 @import 'parts/header'
 @import 'parts/first_screen'
 @import 'parts/spec_tabs'
