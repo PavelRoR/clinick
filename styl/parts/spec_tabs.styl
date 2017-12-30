@@ -11,8 +11,10 @@
 		display: inline-block
 		padding: 10px 22px
 		text-align: center;
-		margin-bottom: 40px
+		margin-bottom: 30px
 		position relative
+		float left
+		width: 25%
 		a
 			font-size: 24px
 			font-family: "OpenSansBold",sans-serif;
@@ -22,6 +24,7 @@
 			transition: all .4s ease			
 .ui-state-default.ui-tab.ui-tabs-active.ui-state-active,
 .ui-state-default.ui-tab.ui-tabs-active.ui-state-focus
+	margin-bottom: 3px
 	a
 		color: green
 		transition: all .4s ease
@@ -32,7 +35,7 @@
 		background-color: green 
 		position relative
 		bottom: -42px
-		margin: 0 auto
+		margin: 0 auto 
 		transition: all .4s ease
 		display block
 	&:after
@@ -42,9 +45,11 @@
 		background-image: linear-gradient(45deg, green 50%, transparent 50%)
 		position absolute
 		bottom: 0
-		left: calc(50% - 5px)
 		transform: rotate(-45deg)
-		transition: all .4s ease		
+		transition: all .4s ease
+		margin: 0 auto;
+		left: 0;
+		right: 0;
 .ui-state-default.ui-tab.ui-state-hover
 	a
 		color green
@@ -56,6 +61,7 @@
 		border-radius: 5px
 		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 		overflow: hidden
+		clear: left
 	+ p
 		text-align: center
 		font-size: 22px
