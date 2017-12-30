@@ -13,13 +13,11 @@ section#location
                 select(name="month")
                     each val in ['Месяц','Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь']
                         option(value=val)= val
-                a.select_button
             .day.select
                 select(name="day")
                     - var n = 1;
                     while n < 32
                         //- option(value="День") День
                         option(value=n)= n++
-                a.select_button
             textarea(name="textarea",  placeholder="Комментарий")
             button.button(type="submit") Записаться
