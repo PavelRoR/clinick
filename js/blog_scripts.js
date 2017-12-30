@@ -44,8 +44,26 @@ $(document).ready(function () {
     btnActive: 'Свернуть',
     btnClass: 'full'
    });
-
-
+  /* Меню */
+   $('#menu_icon').on('click', function () {
+    if (!$(this).hasClass('clicked')) {
+        $(this).addClass('clicked');
+        $('.upper_span').addClass('upper_span_opened');
+        $('.middle_span').addClass('middle_span_opened');
+        $('.lower_span').addClass('lower_span_opened');
+        $('.menu_container').addClass('menu_container_opened');
+        $('body').css("overflow", "hidden");
+        $('#aside').delay(300).show(300);
+    } else {
+        $(this).delay(300).removeClass('clicked');
+        $('.upper_span').removeClass('upper_span_opened');
+        $('.middle_span').removeClass('middle_span_opened');
+        $('.lower_span').removeClass('lower_span_opened');
+        $('.menu_container').removeClass('menu_container_opened');
+        $('#aside').hide(300);
+        $('body').css("overflow", "initial");        
+    }
+});
 
     /* Конец документа */
 });
